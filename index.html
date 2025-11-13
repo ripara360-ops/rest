@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ripara360 — Manutenzione tecnica multisettore</title>
+  <meta name="description" content="Ripara360 offre interventi elettrici, idraulici, climatizzazione, edilizia, pulizie e sicurezza. Servizi rapidi, certificati e su misura per aziende e privati."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><circle cx='24' cy='24' r='20' fill='%23ff6a00'/></svg>">
+  <style>
+    :root{--bg:#f4f6f7;--card:#ffffff;--dark:#1f2326;--muted:#9aa0a6;--accent:#ff6a00;--radius:12px;}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:var(--dark);-webkit-font-smoothing:antialiased}
+    header{background:linear-gradient(90deg, #131516 0%, #1f2326 100%);color:#fff;padding:24px 20px}
+    .container{max-width:1100px;margin:0 auto;padding:20px}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo svg{height:48px}
+    nav a{color:#cbd2d6;text-decoration:none;margin-left:18px;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:40px 0}
+    .hero h1{font-family:Montserrat,Inter;font-size:36px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 20px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:8px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--accent);color:#fff}
+    .btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,0.12)}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(16,24,32,0.06)}
+    .sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+    .sector{padding:16px;border-radius:8px;border:1px solid #e7eaec;text-align:center}
+    .sector h4{margin:8px 0 4px;font-size:16px}
+    .contact-card h3{margin:0 0 8px}
+    form label{display:block;font-size:13px;color:var(--muted);margin-top:10px}
+    input[type="text"],input[type="email"],select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #d7dee3;margin-top:6px;font-size:14px}
+    textarea{min-height:110px;resize:vertical}
+    footer{padding:28px 0;margin-top:30px;color:var(--muted)}
+    .grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
+    @media(max-width:900px){.hero{grid-template-columns:1fr; padding-bottom:20px}.sectors{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:1fr}}
+    .wa {position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.15);text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <div class="logo">
+          <svg width="160" height="48" viewBox="0 0 180 60" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="35" cy="30" r="24" stroke="#ff6a00" stroke-width="6" fill="none"/>
+            <text x="70" y="38" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="28" fill="#ffffff">Ripara</text>
+            <text x="155" y="38" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="24" fill="#ff6a00">360</text>
+          </svg>
+        </div>
+      </div>
+      <nav>
+        <a href="#servizi">Servizi</a>
+        <a href="#preventivo">Preventivo</a>
+        <a href="#recensioni">Recensioni</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Ripara360 — manutenzione tecnica a 360°</h1>
+        <p>Interventi elettrici, idraulici, climatizzazione, edilizia, pulizie e sicurezza per aziende e privati. Servizi rapidi, certificati e programmabili.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#preventivo">Richiedi intervento</a>
+          <a class="btn btn-outline" href="#contatti">Contattaci</a>
+        </div>
+
+        <div class="card" style="margin-top:24px">
+          <strong>Settori principali</strong>
+          <div class="sectors" id="servizi">
+            <div class="sector"><div style="font-size:28px">⚡</div><h4>Elettrico</h4><div style="color:var(--muted);font-size:13px">Impianti, verifiche e guasti.</div></div>
+            <div class="sector"><div style="font-size:28px">🚿</div><h4>Idraulica</h4><div style="color:var(--muted);font-size:13px">Riparazioni e manutenzioni.</div></div>
+            <div class="sector"><div style="font-size:28px">❄️</div><h4>Climatizzazione</h4><div style="color:var(--muted);font-size:13px">HVAC e pompe di calore.</div></div>
+            <div class="sector"><div style="font-size:28px">🧽</div><h4>Pulizie</h4><div style="color:var(--muted);font-size:13px">Civili e industriali.</div></div>
+            <div class="sector"><div style="font-size:28px">🌿</div><h4>Giardinaggio</h4><div style="color:var(--muted);font-size:13px">Aree verdi e potature.</div></div>
+            <div class="sector"><div style="font-size:28px">🔒</div><h4>Sicurezza</h4><div style="color:var(--muted);font-size:13px">Antifurti e videosorveglianza.</div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card contact-card" id="preventivo">
+        <h3>Richiedi intervento</h3>
+        <p style="color:var(--muted);margin:0 0 12px;font-size:14px">Compila il modulo, ti ricontattiamo entro 24 ore.</p>
+        <form action="https://formspree.io/f/yourformid" method="POST">
+          <label>Settore</label>
+          <select name="settore" required>
+            <option>Elettrico</option><option>Idraulica</option><option>Climatizzazione</option><option>Pulizie</option><option>Giardinaggio</option><option>Sicurezza</option><option>Edilizia</option>
+          </select>
+          <label>Tipologia intervento</label>
+          <input type="text" name="tipo" placeholder="Breve descrizione">
+          <label>Urgenza</label>
+          <select name="urgenza">
+            <option>Immediato</option><option>24-48h</option><option>Programmato</option>
+          </select>
+          <label>Indirizzo</label>
+          <input type="text" name="indirizzo" placeholder="Via, civico, città">
+          <label>Data preferita</label>
+          <input type="text" name="data" placeholder="gg/mm/aaaa">
+          <label>Telefono</label>
+          <input type="text" name="telefono" placeholder="+39" required>
+          <label>Email</label>
+          <input type="email" name="email" placeholder="ripara360@gmail.com">
+          <label>Note aggiuntive</label>
+          <textarea name="note" placeholder="Descrivi qui..."></textarea>
+          <label style="margin-top:12px"><input type="checkbox" required> Accetto il trattamento dei dati personali</label>
+          <div style="margin-top:12px"><button class="btn btn-primary" type="submit">Invia richiesta</button></div>
+        </form>
+        <div style="font-size:13px;color:var(--muted);margin-top:12px">
+          Oppure scrivici su WhatsApp: <br/><a href="https://wa.me/393383431144" target="_blank">+39 338 343 1144</a>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <a class="wa" href="https://wa.me/393383431144?text=Salve%2C%20vorrei%20richiedere%20un%20intervento" target="_blank" aria-label="WhatsApp">WA</a>
+</body>
+</html>
